@@ -71,7 +71,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'practice.urls'
+ROOT_URLCONF = 'S_POP.urls'
 
 TEMPLATES = [
     {
@@ -89,7 +89,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'practice.wsgi.application'
+WSGI_APPLICATION = 'S_POP.wsgi.application'
 
 
 # Database
