@@ -12,10 +12,10 @@ class Movie(models.Model):
     vote_average = models.FloatField()
     genre = models.CharField(max_length=50)
     popularity = models.IntegerField()
-    like_user = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_movies')
+    like_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_movies')
 
 class Comment(models.Model):
 
-    content = models.TextField()
-    movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    content = models.CharField(max_length=200)
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='comments')
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='comments')
