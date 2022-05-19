@@ -13,7 +13,7 @@ class Movie(models.Model):
     genre = models.CharField(max_length=50)
     like_user = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_movies')
 
-class Comments(models.Model):
+class Comment(models.Model):
 
     content = models.TextField()
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
