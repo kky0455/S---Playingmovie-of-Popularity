@@ -51,9 +51,9 @@
 |     Signup      |        회원가입         |     x     |
 |     Profile     |    사용자 정보 조회     |     x     |
 
+- **Design**
 
-
-- ERD
+![design](README.assets/design.PNG)
 
 ## Final-pjt-back
 
@@ -69,4 +69,6 @@
 
 
 
-- design
+- **ERD**
+
+![image-20220520172156216](README.assets/image-20220520172156216.png)
