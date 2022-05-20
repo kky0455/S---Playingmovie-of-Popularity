@@ -19,7 +19,7 @@ class MovieSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ('pk', 'user', 'title', 'original_title', 'comments', 'like_users', 'overview', 'release_date', 'poster_path', 'vote_average', 'genre', 'like_user')
+        fields = ('pk', 'user', 'title', 'original_title', 'comments', 'like_users', 'overview', 'release_date', 'poster_path', 'vote_average', 'genre', 'popularity')
 
 
 # Article List Read
@@ -36,4 +36,4 @@ class MovieListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ('pk', 'user', 'title', 'comment_count', 'like_count')
+        fields = ('pk', 'user', 'title', 'comment_count', 'like_count', 'poster_path',)
